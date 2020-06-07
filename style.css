@@ -17,6 +17,8 @@ nav {
 nav div {
   margin: 0 auto;
   width: 1200px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 nav div a {
@@ -42,6 +44,8 @@ nav div:hover {
 #picture {
   margin: 0 auto;
   width: 1200px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -77,11 +81,13 @@ nav div:hover {
 #content {
   margin: 0 auto;
   width: 1200px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2 1fr);
-  grid-gap: 50px;
+  grid-gap: 20px;
 }
 
 #content h1 {
@@ -94,5 +100,80 @@ nav div:hover {
 #content p {
   line-height: 2;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  nav div {
+    width: 750px;
+    margin: 0 auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  #picture {
+    width: 750px;
+    margin: 0 auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #picture div {
+    height: 300px;
+  }
+  #picture div:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  #picture div:nth-child(2) {
+    background-image: url(./img/p-beach-1.jpg);
+  }
+  #picture div:nth-child(3) {
+    background-image: url(./img/p-beach-2.jpg);
+  }
+  #content {
+    width: 750px;
+    margin: 0 auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav div {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  #picture {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #picture div {
+    height: 450px;
+    background-repeat: no-repeat;
+  }
+  #picture div:nth-child(2) {
+    background-image: url(./img/m-beach-1.png);
+  }
+  #picture div:nth-child(3) {
+    background-image: url(./img/m-beach-2.png);
+  }
+  #content {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  #content h1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
