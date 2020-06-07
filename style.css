@@ -155,7 +155,7 @@ nav div:hover {
         grid-template-columns: 1fr;
   }
   #picture div {
-    height: 450px;
+    height: 350px;
     background-repeat: no-repeat;
   }
   #picture div:nth-child(2) {
@@ -174,6 +174,10 @@ nav div:hover {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
+    margin: auto;
+  }
+  #content div {
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

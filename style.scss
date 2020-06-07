@@ -159,7 +159,7 @@ nav {
         grid-template-columns: 1fr;
 
         div{
-        height: 450px;
+        height: 350px;
         background-repeat: no-repeat;
 
          &:nth-child(2){
@@ -178,8 +178,14 @@ nav {
 
         h1 {
             grid-column: 1 / 2;
-       
-        }    
+            margin:auto;
+        } 
+
+        div{
+            margin: 20px;
+        }
+        
+        
     }
 
 
