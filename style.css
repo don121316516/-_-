@@ -102,12 +102,26 @@ nav div:hover {
   margin-bottom: 20px;
 }
 
+#menu {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   nav div {
     width: 750px;
     margin: 0 auto;
     -webkit-transition: 0.8s;
     transition: 0.8s;
+    display: none;
+  }
+  nav #menu {
+    display: block;
+  }
+  nav #menu a {
+    display: none;
+  }
+  nav #menu a:nth-child(1) {
+    display: block;
   }
   #picture {
     width: 750px;
