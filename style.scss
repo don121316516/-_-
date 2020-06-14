@@ -132,6 +132,16 @@ nav {
                 &:nth-child(1) {
                     display: block;
                 }
+
+            }
+
+            // 滑入顯示選單
+            // nth-child(公式)
+            // an+bs
+            // n+2 (n 從 0 開始增加)
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 20px 0;
             }
         }
     }
@@ -173,7 +183,32 @@ nav {
 
     nav{
         div {
-            @include phone()
+            @include phone();
+            display: none;
+        }
+
+        #menu{
+            display: block;
+            
+            a {
+                // 隱藏所有連結
+                display: none;
+                
+                // 顯示第一個選單連結
+                &:nth-child(1) {
+                    display: block;
+                }
+            }
+
+            // 滑入顯示選單
+            // nth-child(公式)
+            // an+bs
+            // n+2 (n 從 0 開始增加)
+            &:hover a:nth-child(n+2){
+                display: block;
+                padding: 20px 0;
+                transition: 2s;
+            }
         }
     }
 
