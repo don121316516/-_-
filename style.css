@@ -122,6 +122,7 @@ nav div:hover {
   }
   nav #menu a:nth-child(1) {
     display: block;
+    padding: 0 0;
   }
   nav #menu:hover a:nth-child(n+2) {
     display: block;
